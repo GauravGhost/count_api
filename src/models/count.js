@@ -4,11 +4,11 @@ const mongoose = require('mongoose')
 const countSchema = new mongoose.Schema({
     addCount: {
         type: Number,
-        required: true
+        deafult: 0
     },
     updateCount: {
         type: Number,
-        require: true
+        default: 0
     }
 })
 const Count = mongoose.model('Count', countSchema);
